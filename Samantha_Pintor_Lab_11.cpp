@@ -50,6 +50,10 @@ int main ()
         if (alpha[index] == 100) { //If the number is exactly 100
             equalToHundred++; //Increment
         }
+
+        if ((index + 1) % 10 == 0) { //Loop starts from 0, checks if (index + 1) is divisible by 10
+            cout << endl; //Insert newline every 10 numbers
+        }
     }
     
     //Output the average and total numbers equal to 100
@@ -69,7 +73,12 @@ Part 1:
 120 123 126 129 132 135 138 141 144 147 
 
 Part 2: 
-15 51 79 90 93 49 89 2 19 99 43 54 40 99 75 60 57 23 82 91 1 45 9 48 14 69 78 99 42 61 30 56 12 60 45 56 9 86 57 79 36 51 84 75 2 10 34 58 33 67 
-The average is... 52.32
+84 31 90 55 88 27 29 45 85 75 
+6 78 36 30 71 14 36 64 33 55 
+83 98 33 64 17 55 34 91 19 36 
+47 3 18 88 57 5 15 85 1 51 
+11 6 28 46 87 98 11 23 14 44 
+
+The average is... 46
 There are 0 numbers equal to one hundred.
 */
